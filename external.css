@@ -1,0 +1,192 @@
+body{
+    background-color:aliceblue;
+}
+h1{
+    color: mediumblue;
+
+}
+h2{
+    color: navy;
+    text-decoration: underline;
+}
+ul li{
+    background-color: rgb(89, 55, 157);
+    width: 200px;
+    color: ghostwhite;
+    padding: 1em;
+}
+li:nth-child(odd){
+    background-color: rgb(11, 101, 96);
+}
+.container{
+    border: 1px solid darkgreen;
+    padding: 20px;
+    background-color: lightgray ;
+    height: 500px;
+    width: 750px;
+    display: flex;
+    flex-flow: column wrap;
+}
+.container div{
+    margin: 5px;
+    padding: 2px;
+    position: relative;
+}
+.container div div{
+ position: relative;
+ border: 1px solid darkgreen;
+}
+.box1{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    z-index: 10;
+    top: 3%;
+    left: 10%;
+}
+.box2{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    z-index: 20;
+    top: -3em;
+    left: 4em;
+}
+.box3{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    z-index: 30;
+    top: -8em;
+    left: 1em;
+}
+.box4{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    z-index: 20;
+    top: -18em;
+    left: -1em;
+}
+.box5{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    z-index: 50;
+    top: 18em;
+    left: -5em;
+}
+.box6{
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    z-index: 60;
+    top: 8em;
+    left: -4em;
+}
+.box7{
+    width: 100px;
+    height: 100px;
+    background-color: deeppink;
+    position: relative;
+    z-index: 70;
+    top: 3em;
+    left: -1em;
+}
+.box8{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    z-index: 5;
+    top: -7em;
+    left: -2em;
+}
+.box9{
+    width: 150px;
+    height: 100px;
+    background-color: darkorchid;
+    z-index: 9;
+    top: 1rem;
+    left: -6rem;
+}
+.box10{
+    width: 150px;
+    height: 100px;
+    background-color: yellowgreen;
+    z-index: 70;
+    top: -3rem;
+    left: -3rem;
+}
+.box11{
+    width: 150px;
+    height: 100px;
+    background-color: darkgreen;
+    z-index: 60;
+    top: -11rem;
+    left: -8rem;
+}
+.box12{
+    width: 150px;
+    height: 100px;
+    background-color: lightcoral;
+    z-index: 75;
+    top: -15rem;
+    left: -5rem;
+}
+.box13{
+    width: 150px;
+    height: 100px;
+    background-color: tomato;
+    z-index: 80;
+    top: 20rem;
+    left: -13rem;
+}
+.box14{
+    width: 150px;
+    height: 100px;
+    background-color: purple;
+    z-index: 10;
+    top: 10rem;
+    left: -12rem;
+}
+.box15{
+    width: 150px;
+    height: 100px;
+    background-color: crimson;
+    z-index: 70;
+    top: 5rem;
+    left: -17rem;
+}
+.box16{
+    width: 150px;
+    height: 100px;
+    background-color: darkblue;
+    z-index: 5;
+    top: -5rem;
+    left: -15rem;
+}
+
+
+@media(max-width: 480px){
+   .container{
+    flex-flow: row nowrap;
+    width: 80vw;
+   } 
+   .container div{
+    width: 50%;
+   }
+}
+@media(max-width: 1024px){
+    .container{
+        flex-flow: row nowrap;
+        width: 90vw;
+       } 
+       .container div{
+        width: 30%;
+       }
+}
+@media(max-width: 1680px){
+    .container{
+        flex-flow: column wrap;
+       } 
+}
